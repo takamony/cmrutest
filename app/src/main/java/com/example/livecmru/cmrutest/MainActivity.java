@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         //
         imageView = (ImageView) findViewById(R.id.imageView6);
-        userEditText = (EditText) findViewById(R.id.editText4);
-        passwordEditText = (EditText) findViewById(R.id.editText5);
+        userEditText = (EditText) findViewById(R.id.editText5);
+        passwordEditText = (EditText) findViewById(R.id.editText6);
 
         //Load Logo
         Picasso.with(this).load(urlLogo).resize(150,180).into(imageView);
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (userString.equals("") || passwordString.equals("")) {
             MyAlert myAlert = new MyAlert();
-            myAlert.myDialog(this, "No No","no no");
+            myAlert.myDialog(this, "กรอกข้อมูลไม่ครบ","กรุณาใส่ให้ครบด้วย");
         }
     }
 
